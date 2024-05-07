@@ -43,8 +43,11 @@
 
 ```bash
 # npm 安装
+
 $ npm install --save @souljs/theme-crazing-js
+
 # yarn 安装
+
 $ yarn add @souljs/theme-crazing-js
 ```
 
@@ -67,18 +70,14 @@ $ yarn add @souljs/theme-crazing-js
 import { useTheme } from '@souljs/theme-crazing-js';
 const { setTheme } = useTheme();
 
-btn.addEventListener('click', function (e) {
+function handleClick(e: Event) {
   setTheme(e);
-});
+}
 </script>
 
 <template>
-  <button id="btn">Toggle Theme</button>
+  <button @click="handleClick">Toggle Theme</button>
 </template>
-```
-
-```js
-const @souljs/theme-crazing-js = require('@souljs/theme-crazing-js');
 ```
 
 ## :bookmark_tabs: 文档
